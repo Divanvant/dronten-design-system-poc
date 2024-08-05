@@ -1,5 +1,5 @@
 {
-  "name": "@example/font",
+  "name": "@dronten/font",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "Font assets",
@@ -17,7 +17,10 @@
   ],
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git",
-    "directory": "proprietary/font"
+    "url": "git@github.com:Divanvant/dronten-design-system-poc.git",
+    "directory": "packages/font"
+  },
+  "dependencies": {
+    "@fontsource/source-sans-pro": "5.0.8"
   }
 }

@@ -1,0 +1,15 @@
+{
+  "dronten": {
+    "button": {
+      "background-color": {
+        "value": "{dronten.color.purple.40}"
+      },
+      "color": {
+        "value": "{dronten.color.grey.100}"
+      },
+      "radius": {
+        "value": "{dronten.radius.button}"
+      }
+    }
+  }
+}
