@@ -1,13 +1,13 @@
 /* @license CC0-1.0 */
 
-import readme from '@example/components-css/button/README.md?raw';
+import readme from '@dronten/components-css/button/README.md?raw';
 import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithChildren } from 'react';
-import '@example/components-css/button/index.scss';
+import '@dronten/components-css/button/index.scss';
 
 const Button = ({ children }: PropsWithChildren<{}>) => (
-  <button className="example-button" type="button">
-    <span className="example-button__text">{children}</span>
+  <button className="dronten-button" type="button">
+    <span className="dronten-button__text">{children}</span>
   </button>
 );
 
@@ -44,5 +44,5 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  name: 'Example button',
+  name: 'Dronten button',
 };

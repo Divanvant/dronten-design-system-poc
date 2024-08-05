@@ -1,5 +1,5 @@
 {
-  "name": "@example/storybook",
+  "name": "@dronten/storybook",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
   "description": "Storybook based on the NL Design System architecture",
@@ -10,7 +10,7 @@
   "private": true,
   "repository": {
     "type": "git+ssh",
-    "url": "git@github.com:nl-design-system/example.git",
+    "url": "git@github.com:Divanvant/dronten-design-system-poc.git",
     "directory": "packages/storybook"
   },
   "scripts": {
@@ -22,12 +22,12 @@
   "devDependencies": {
     "@babel/core": "7.24.7",
     "@etchteam/storybook-addon-status": "5.0.0",
-    "@example/assets": "workspace:*",
-    "@example/components-css": "workspace:*",
-    "@example/design-tokens": "workspace:*",
-    "@example/font": "workspace:*",
-    "@example/web-components-react": "workspace:*",
-    "@example/web-components-stencil": "workspace:*",
+    "@dronten/assets": "workspace:*",
+    "@dronten/components-css": "workspace:*",
+    "@dronten/design-tokens": "workspace:*",
+    "@dronten/font": "workspace:*",
+    "@dronten/web-components-react": "workspace:*",
+    "@dronten/web-components-stencil": "workspace:*",
     "@storybook/addon-a11y": "8.1.11",
     "@storybook/addon-actions": "8.1.11",
     "@storybook/addon-docs": "8.1.11",

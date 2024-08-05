@@ -3,7 +3,7 @@ import { reactOutputTarget } from '@stencil/react-output-target';
 import { sass } from '@stencil/sass';
 
 export const config: Config = {
-  namespace: 'example',
+  namespace: 'dronten',
   srcDir: './src/',
   outputTargets: [
     {
@@ -19,7 +19,7 @@ export const config: Config = {
       serviceWorker: null, // disable service workers
     },
     reactOutputTarget({
-      componentCorePackage: '@example/web-components-stencil',
+      componentCorePackage: '@dronten/web-components-stencil',
       proxiesFile: '../web-components-react/src/components.ts',
     }),
   ],
