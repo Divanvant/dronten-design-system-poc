@@ -1,0 +1,8 @@
+{
+  "dronten": {
+    "button": {
+      "background-color": { "value": "{dronten.color.grey.100}" },
+      "color": { "value": "{dronten.color.grey.100}" }
+    }
+  }
+}
