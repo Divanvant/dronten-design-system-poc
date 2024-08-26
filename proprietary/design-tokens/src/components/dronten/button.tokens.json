@@ -10,6 +10,19 @@
       "radius": {
         "value": "{dronten.radius.button}"
       }
+    },
+    "secondary-button": {
+      "background-color": {
+        "value": "{dronten.color.green.40}"
+      }
+    },
+    "icon-button": {
+      "radius": {
+        "value": "{dronten.radius.round}"
+      },
+      "size": {
+        "value": "36px"
+      }
     }
   }
 }

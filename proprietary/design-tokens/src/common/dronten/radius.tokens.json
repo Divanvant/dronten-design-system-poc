@@ -1,6 +1,9 @@
 {
   "dronten": {
     "radius": {
+      "round": {
+        "value": "50%"
+      },
       "button": {
         "value": "5px"
       }

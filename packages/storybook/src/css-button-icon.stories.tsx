@@ -5,20 +5,18 @@ import type { Meta, StoryObj } from '@storybook/react';
 import { PropsWithChildren } from 'react';
 import '@dronten/components-css/button/index.scss';
 
-const Button = ({ children }: PropsWithChildren<{}>) => (
-  <button className="dronten-button" type="button">
-    <span className="dronten-button__text">{children}</span>
-  </button>
+const IconButton = ({ iconName }: PropsWithChildren<{ iconName: string }>) => (
+  <i className={`dronten-icon-button fas fa-${iconName}`}></i>
 );
 
 const meta = {
-  title: 'CSS Component/Buttons/Button',
-  id: 'css-button',
-  component: Button,
+  title: 'CSS Component/Buttons/IconButton',
+  id: 'css-icon-button',
+  component: IconButton,
   argTypes: {
-    children: {
+    iconName: {
       name: 'Content',
-      description: 'Button text',
+      description: 'Button icon name (from fontawesome)',
       type: {
         name: 'string',
         required: true,
@@ -27,7 +25,7 @@ const meta = {
     },
   },
   args: {
-    children: 'Opslaan en verder',
+    iconName: 'map-marker-alt',
   },
   tags: ['autodocs'],
   parameters: {
@@ -37,12 +35,12 @@ const meta = {
       },
     },
   },
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof IconButton>;
 
 export default meta;
 
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
-  name: 'Dronten button',
+  name: 'Dronten icon button',
 };
