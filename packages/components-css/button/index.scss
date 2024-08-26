@@ -28,3 +28,23 @@
   /* stylelint-disable-next-line property-disallowed-list */
   width: var(--dronten-icon-button-size);
 }
+
+.dronten-social-icon {
+  align-items: center;
+  background-color: var(--dronten-social-icon-button-background-color);
+  border-radius: var(--dronten-icon-button-radius);
+  box-sizing: border-box;
+  color: var(--dronten-social-icon-button-color);
+  display: inline-flex;
+  font-size: var(--dronten-social-icon-button-icon-size);
+  /* stylelint-disable-next-line property-disallowed-list */
+  height: var(--dronten-social-icon-button-size);
+  justify-content: center;
+  /* stylelint-disable-next-line property-disallowed-list */
+  width: var(--dronten-social-icon-button-size);
+
+  &:hover {
+    background-color: var(--dronten-button-background-color);
+    color: var(--dronten-button-color);
+  }
+}
