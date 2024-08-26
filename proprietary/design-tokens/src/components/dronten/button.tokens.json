@@ -23,6 +23,23 @@
       "size": {
         "value": "36px"
       }
+    },
+    "social-icon-button": {
+      "background-color": {
+        "value": "{dronten.color.grey.100}"
+      },
+      "color": {
+        "value": "{dronten.color.purple.40}"
+      },
+      "radius": {
+        "value": "{dronten.radius.round}"
+      },
+      "size": {
+        "value": "48px"
+      },
+      "icon-size": {
+        "value": "1.3rem"
+      }
     }
   }
 }

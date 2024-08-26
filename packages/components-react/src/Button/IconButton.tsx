@@ -6,7 +6,7 @@ type IconButtonProps = {
   iconName: string;
 };
 
-export const IconButton = forwardRef(({ iconName }: IconButtonProps, ref: ForwardedRef<HTMLButtonElement>) => {
+export const IconButton = forwardRef(({ iconName }: IconButtonProps, ref: ForwardedRef<HTMLElement>) => {
   return <i ref={ref} className={clsx('dronten-icon-button', `fas fa-${iconName}`)}></i>;
 });
 
