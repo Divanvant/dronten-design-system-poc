@@ -1,0 +1,53 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 Community for NL Design System
+ */
+
+.dronten-location-card {
+  background-color: var(--dronten-card-background-color);
+  border-radius: var(--dronten-card-radius);
+  box-shadow: var(--dronten-card-shadow);
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+
+  @media (width >= 768px) {
+    flex-wrap: nowrap;
+  }
+
+  &__image {
+    object-fit: cover;
+
+    @media (width >= 768px) {
+      /* stylelint-disable-next-line property-disallowed-list */
+      width: 45%;
+    }
+  }
+
+  &__content {
+    padding-block: 1rem;
+    padding-inline: 1rem;
+
+    @media (width >= 768px) {
+      /* stylelint-disable-next-line property-disallowed-list */
+      min-height: 40ch; /* just to get the extra visual height without the extra data */
+    }
+
+    h2 {
+      font-size: calc(1.255rem + 0.06vw);
+      margin-block-end: 0.5rem;
+      margin-block-start: 0;
+      margin-inline: 0;
+    }
+  }
+
+  &__address {
+    align-items: center;
+    display: flex;
+
+    address {
+      font-style: normal;
+      padding-inline-start: 1rem;
+    }
+  }
+}

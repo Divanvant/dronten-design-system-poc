@@ -6,6 +6,9 @@
       },
       "button": {
         "value": "5px"
+      },
+      "card": {
+        "value": "13px"
       }
     }
   }

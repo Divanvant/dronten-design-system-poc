@@ -1,0 +1,15 @@
+{
+  "dronten": {
+    "card": {
+      "background-color": {
+        "value": "{dronten.color.grey.100}"
+      },
+      "radius": {
+        "value": "{dronten.radius.card}"
+      },
+      "shadow": {
+        "value": "0 1px 1px 0 rgba(40, 44, 53, 0.08), 0 2px 2px 0 rgba(40, 44, 53, 0.05)"
+      }
+    }
+  }
+}
