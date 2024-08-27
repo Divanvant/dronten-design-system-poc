@@ -6,18 +6,17 @@ import { PropsWithChildren } from 'react';
 import '@dronten/components-css/button/index.scss';
 
 const SocialIconButton = ({ link, iconName }: PropsWithChildren<{ link: string; iconName: string }>) => (
-  <div style={{ background: '#f8f8f8', padding: '1rem' }}>
-    <a href={link} target="_blank" rel="noreferrer">
-      <i className={`dronten-social-icon fab fa-${iconName}`}></i>
-      <span className="sr-only">{iconName.split('-')[0]} van Gemeente Dronten, opent in nieuw tabblad</span>
-    </a>
-  </div>
+  <a href={link} target="_blank" rel="noreferrer">
+    <i className={`dronten-social-icon fab fa-${iconName}`}></i>
+    <span className="sr-only">{iconName.split('-')[0]} van Gemeente Dronten, opent in nieuw tabblad</span>
+  </a>
 );
 
 const meta = {
   title: 'CSS Component/Buttons/SocialIconButton',
   id: 'css-social-icon-button',
   component: SocialIconButton,
+  decorators: [(story) => <div style={{ background: '#f8f8f8', padding: '1rem' }}>{story()}</div>],
   argTypes: {
     iconName: {
       name: 'Content',

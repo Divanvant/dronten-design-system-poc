@@ -1,5 +1,5 @@
+import { IconButton } from '@dronten/components-react/src/Button';
 import { Meta, StoryObj } from '@storybook/react';
-import { IconButton } from '../../components-react/src/Button';
 
 const meta = {
   title: 'React Component/Buttons/IconButton',

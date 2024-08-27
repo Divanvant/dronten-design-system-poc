@@ -1,10 +1,11 @@
+import { SocialIconButton } from '@dronten/components-react/src/Button';
 import { Meta, StoryObj } from '@storybook/react';
-import { SocialIconButton } from '../../components-react/src/Button';
 
 const meta = {
   title: 'React Component/Buttons/SocialIconButton',
   id: 'react-social-icon-button',
   component: SocialIconButton,
+  decorators: [(story) => <div style={{ background: '#f8f8f8', padding: '1rem' }}>{story()}</div>],
   args: {
     link: '#',
     iconName: 'x-twitter',
