@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 import '@dronten/components-css/card/index.scss';
 
@@ -8,17 +7,16 @@ export interface NieuwsCardProps {
   title: string;
   description?: string;
   dateTime: string;
-  className: string;
 }
 
 export const NieuwsCard = forwardRef(
   (
-    { imageUrl, linkUrl, title, description, dateTime, className, ...restProps }: PropsWithChildren<NieuwsCardProps>,
+    { imageUrl, linkUrl, title, description, dateTime, ...restProps }: PropsWithChildren<NieuwsCardProps>,
     ref: ForwardedRef<HTMLDivElement>,
   ) => {
     return (
       <>
-        <div ref={ref} className={clsx('dronten-nieuws-card', className)} {...restProps}>
+        <div ref={ref} className="dronten-nieuws-card" {...restProps}>
           <div className="dronten-nieuws-card__image">
             <img srcSet={imageUrl} alt="" />
           </div>

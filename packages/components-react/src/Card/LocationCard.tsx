@@ -1,4 +1,3 @@
-import clsx from 'clsx';
 import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
 import '@dronten/components-css/card/index.scss';
 import { IconButton } from '../Button';
@@ -11,7 +10,6 @@ export interface LocationCardProps {
   street: string;
   zipCode: string;
   city: string;
-  className: string;
 }
 
 export const LocationCard = forwardRef(
@@ -24,13 +22,12 @@ export const LocationCard = forwardRef(
       street,
       zipCode,
       city,
-      className,
       ...restProps
     }: PropsWithChildren<LocationCardProps>,
     ref: ForwardedRef<HTMLDivElement>,
   ) => {
     return (
-      <div ref={ref} className={clsx('dronten-location-card', className)} {...restProps}>
+      <div ref={ref} className="dronten-location-card" {...restProps}>
         <img srcSet={imageUrl} className="dronten-location-card__image" />
         <div className="dronten-location-card__content">
           <h2>{cardTitle}</h2>

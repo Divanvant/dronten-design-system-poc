@@ -11,6 +11,10 @@
   flex-wrap: wrap;
   overflow: hidden;
 
+  + .dronten-location-card {
+    margin-block-start: 1rem;
+  }
+
   @media (width >= 768px) {
     flex-wrap: nowrap;
   }
@@ -121,7 +125,7 @@
     border-bottom: 3px solid var(--dronten-nieuws-card-button-border-color);
     border-radius: var(--dronten-nieuws-card-button-border-radius);
     color: var(--dronten-nieuws-card-button-color);
-    margin-inline-start: auto;
+    margin-block-start: auto;
     padding-block: 0.7rem;
     padding-inline: 1.8rem;
     text-decoration: none;

@@ -2,7 +2,7 @@
   "name": "@dronten/components-react",
   "version": "1.0.0-alpha.0",
   "author": "Community for NL Design System",
-  "description": "React component library for the Example repository, based on the NL Design System architecture",
+  "description": "React components for the Municipality of Dronten based on the NL Design System architecture",
   "license": "EUPL-1.2",
   "keywords": [
     "nl-design-system"
