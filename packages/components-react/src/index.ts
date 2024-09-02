@@ -1,2 +1,2 @@
 export { Button, IconButton, SocialIconButton } from './Button';
-export { LocationCard } from './Card';
+export { LocationCard, NieuwsCard } from './Card';

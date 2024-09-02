@@ -14,6 +14,12 @@
     "secondary-button": {
       "background-color": {
         "value": "{dronten.color.green.40}"
+      },
+      "color": {
+        "value": "{dronten.color.grey.100}"
+      },
+      "radius": {
+        "value": "{dronten.radius.button}"
       }
     },
     "icon-button": {
@@ -39,6 +45,20 @@
       },
       "icon-size": {
         "value": "1.3rem"
+      }
+    },
+    "nieuws-card-button": {
+      "background-color": {
+        "value": "transparent"
+      },
+      "color": {
+        "value": "{dronten.color.purple.40}"
+      },
+      "border-color": {
+        "value": "{dronten.color.green.40}"
+      },
+      "border-radius": {
+        "value": "0"
       }
     }
   }
