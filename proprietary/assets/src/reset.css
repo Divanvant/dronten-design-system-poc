@@ -1,0 +1,46 @@
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable property-disallowed-list */
+
+body {
+  background-color: var(--dronten-color-grey-70);
+  color: var(--dronten-color-grey-0);
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.sr-only {
+  display: none;
+}
+
+.container {
+  margin-inline: auto;
+  max-width: 960px;
+  padding: 0.9rem 0;
+
+  @media (width > 576px) {
+    max-width: 540px;
+  }
+  @media (width > 768px) {
+    max-width: 720px;
+  }
+  @media (width > 992px) {
+    max-width: 960px;
+  }
+  @media (width > 1200px) {
+    max-width: 1250px;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  max-width: 45ch;
+  text-wrap: pretty;
+}
