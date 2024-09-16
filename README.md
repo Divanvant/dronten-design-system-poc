@@ -1,6 +1,49 @@
 <!-- @license CC0-1.0 -->
 
-# Dronten Design System
+# Dronten Headless architectuur met design systeem POC
+
+## Delen
+
+- [Design systeem](#dronten-design-systeem-documentatie)
+- [React frontend](./apps/poc-react/README.md)
+- [Vue Frontend](./apps/poc-vue/README.md)
+
+## Data bron(nen)
+
+De data word opgehaald vanuit de huidige websites die al bestaat en beheerd worden door de leverancier - Yard. We hebben meerdere websites, met namen, OpenPDC (waar o.a. alle PDC items zitten), OpenPub (waar o.a. alle nieuws items zitten) en de hoofd website.
+
+In dit POC maken we gebruik van de OpenPDC en OpenPub bronnen om de headless concept te bewijzen
+
+De data wordt met React hooks en Vue composables opgehaald. Dat betekent dat om een databron te vervangen hoeft je de componenten heelemaal niet aan te passen, deze laag is geabstraheerd en dus los gekoppeld van hoe de componenten eruit ziet.
+
+## Voorwaarden om de code te draaien
+
+- [NodeJs](https://nodejs.org/en)
+- [PNPM](https://pnpm.io/installation)
+
+## Quick start
+
+### Apps
+
+```bash
+pnpm install
+pnpm dev
+```
+
+### Design systeem
+
+```bash
+pnpm install
+pnpm storybook
+```
+
+### Styling Aanpassingen
+
+In de `proprietary/design-tokens/src/brand/dronten` map kan jij de design tokens aanpassen
+
+---
+
+## Dronten Design Systeem documentatie
 
 ## !NB this codebase is a Proof of concept
 
