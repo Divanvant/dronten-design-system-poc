@@ -1,15 +1,15 @@
-import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
-import '@dronten/components-css/card/index.scss';
-import { IconButton } from '../Button';
+import { ForwardedRef, forwardRef, PropsWithChildren } from 'react'
+import '@dronten/components-css/card/index.scss'
+import { IconButton } from '../Button'
 
 export interface LocationCardProps {
-  cardTitle: string;
-  imageUrl: string;
-  description: string;
-  mapLink: string;
-  street: string;
-  zipCode: string;
-  city: string;
+  cardTitle: string
+  imageUrl: string
+  description: string
+  mapLink: string
+  street: string
+  zipCode: string
+  city: string
 }
 
 export const LocationCard = forwardRef(
@@ -24,7 +24,7 @@ export const LocationCard = forwardRef(
       city,
       ...restProps
     }: PropsWithChildren<LocationCardProps>,
-    ref: ForwardedRef<HTMLDivElement>,
+    ref: ForwardedRef<HTMLDivElement>
   ) => {
     return (
       <div ref={ref} className="dronten-location-card" {...restProps}>
@@ -48,8 +48,8 @@ export const LocationCard = forwardRef(
           </div>
         </div>
       </div>
-    );
-  },
-);
+    )
+  }
+)
 
-LocationCard.displayName = 'LocationCard';
+LocationCard.displayName = 'LocationCard'

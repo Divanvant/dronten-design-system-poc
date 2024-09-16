@@ -6,14 +6,14 @@ module.exports = {
     'no-tilde-version-devDependencies': 'error',
     'require-repository-directory': 'error',
     'valid-values-license': ['error', ['EUPL-1.2']],
-    'valid-values-name-scope': ['error', ['@dronten']],
+    'valid-values-name-scope': ['error', ['@dronten']]
   },
   overrides: [
     {
       patterns: ['proprietary/**/package.json'],
       rules: {
-        'valid-values-license': ['error', ['SEE LICENSE IN LICENSE.md']],
-      },
-    },
-  ],
-};
+        'valid-values-license': ['error', ['SEE LICENSE IN LICENSE.md']]
+      }
+    }
+  ]
+}

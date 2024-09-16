@@ -1,8 +1,8 @@
-import clsx from 'clsx';
-import { ButtonHTMLAttributes, ForwardedRef, forwardRef, PropsWithChildren } from 'react';
-import '@dronten/components-css/button/index.scss';
+import clsx from 'clsx'
+import { ButtonHTMLAttributes, ForwardedRef, forwardRef, PropsWithChildren } from 'react'
+import '@dronten/components-css/button/index.scss'
 
-export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>;
+export type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement>
 
 export const Button = forwardRef(
   ({ children, className, ...restProps }: PropsWithChildren<ButtonProps>, ref: ForwardedRef<HTMLButtonElement>) => {
@@ -10,8 +10,8 @@ export const Button = forwardRef(
       <button ref={ref} className={clsx('dronten-button', className)} {...restProps}>
         {children}
       </button>
-    );
-  },
-);
+    )
+  }
+)
 
-Button.displayName = 'Button';
+Button.displayName = 'Button'

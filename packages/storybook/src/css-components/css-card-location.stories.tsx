@@ -1,9 +1,9 @@
 /* @license CC0-1.0 */
 
-import readme from '@dronten/components-css/card/README.md?raw';
-import '@dronten/components-css/card/index.scss';
-import type { Meta, StoryObj } from '@storybook/react';
-import { PropsWithChildren } from 'react';
+import readme from '@dronten/components-css/card/README.md?raw'
+import '@dronten/components-css/card/index.scss'
+import type { Meta, StoryObj } from '@storybook/react'
+import { PropsWithChildren } from 'react'
 
 const LocationCard = ({
   cardTitle,
@@ -12,15 +12,15 @@ const LocationCard = ({
   mapLink,
   street,
   zipCode,
-  city,
+  city
 }: PropsWithChildren<{
-  cardTitle: string;
-  imageUrl: string;
-  description: string;
-  mapLink: string;
-  street: string;
-  zipCode: string;
-  city: string;
+  cardTitle: string
+  imageUrl: string
+  description: string
+  mapLink: string
+  street: string
+  zipCode: string
+  city: string
 }>) => (
   <div className="dronten-location-card">
     <img srcSet={imageUrl} className="dronten-location-card__image" />
@@ -43,7 +43,7 @@ const LocationCard = ({
       </div>
     </div>
   </div>
-);
+)
 
 const meta = {
   title: 'CSS Component/Cards/Location Card',
@@ -54,58 +54,58 @@ const meta = {
       name: 'Card title',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     description: {
       name: 'Card description',
       type: {
         name: 'string',
-        required: false,
+        required: false
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     imageUrl: {
       name: 'Card image',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     mapLink: {
       name: 'Card mapLink',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     street: {
       name: 'Card street',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     zipCode: {
       name: 'Card zipCode',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     city: {
       name: 'Card city',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
-    },
+      defaultValue: ''
+    }
   },
   args: {
     cardTitle: 'Gemeentehuis',
@@ -115,22 +115,22 @@ const meta = {
     mapLink: '',
     street: 'De Rede 1',
     zipCode: '8251 ER',
-    city: 'Dronten',
+    city: 'Dronten'
   },
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: readme,
-      },
-    },
-  },
-} satisfies Meta<typeof LocationCard>;
+        component: readme
+      }
+    }
+  }
+} satisfies Meta<typeof LocationCard>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  name: 'Dronten card',
-};
+  name: 'Dronten card'
+}

@@ -1,5 +1,5 @@
-import { LocationCard } from '@dronten/components-react/src';
-import { Meta, StoryObj } from '@storybook/react';
+import { LocationCard } from '@dronten/components-react/src'
+import { Meta, StoryObj } from '@storybook/react'
 
 const meta = {
   title: 'React Component/Cards/Location Card',
@@ -10,58 +10,58 @@ const meta = {
       name: 'Card title',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     description: {
       name: 'Card description',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     imageUrl: {
       name: 'Card image',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     mapLink: {
       name: 'Card mapLink',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     street: {
       name: 'Card street',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     zipCode: {
       name: 'Card zipCode',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     city: {
       name: 'Card city',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
-    },
+      defaultValue: ''
+    }
   },
   args: {
     cardTitle: 'Gemeentehuis',
@@ -71,12 +71,12 @@ const meta = {
     mapLink: '',
     street: 'De Rede 1',
     zipCode: '8251 ER',
-    city: 'Dronten',
-  },
-} satisfies Meta<typeof LocationCard>;
+    city: 'Dronten'
+  }
+} satisfies Meta<typeof LocationCard>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
-export const Default: Story = {};
+export const Default: Story = {}

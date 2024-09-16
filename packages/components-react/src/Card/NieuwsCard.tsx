@@ -1,18 +1,18 @@
-import { ForwardedRef, forwardRef, PropsWithChildren } from 'react';
-import '@dronten/components-css/card/index.scss';
+import { ForwardedRef, forwardRef, PropsWithChildren } from 'react'
+import '@dronten/components-css/card/index.scss'
 
 export interface NieuwsCardProps {
-  imageUrl: string;
-  linkUrl: string;
-  title: string;
-  description?: string;
-  dateTime: string;
+  imageUrl: string
+  linkUrl: string
+  title: string
+  description?: string
+  dateTime: string
 }
 
 export const NieuwsCard = forwardRef(
   (
     { imageUrl, linkUrl, title, description, dateTime, ...restProps }: PropsWithChildren<NieuwsCardProps>,
-    ref: ForwardedRef<HTMLDivElement>,
+    ref: ForwardedRef<HTMLDivElement>
   ) => {
     return (
       <>
@@ -40,8 +40,8 @@ export const NieuwsCard = forwardRef(
           </div>
         </div>
       </>
-    );
-  },
-);
+    )
+  }
+)
 
-NieuwsCard.displayName = 'NieuwsCard';
+NieuwsCard.displayName = 'NieuwsCard'

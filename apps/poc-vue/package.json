@@ -1,0 +1,47 @@
+{
+  "name": "@dronten/vue-poc",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "repository": {
+    "type": "git+ssh",
+    "url": "git@github.com:Divanvant/dronten-design-system-poc.git",
+    "directory": "apps/poc-vue"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "run-p type-check \"build-only {@}\" --",
+    "preview": "vite preview",
+    "build-only": "vite build",
+    "type-check": "vue-tsc --build --force",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .eslintignore",
+    "format": "prettier --write src/"
+  },
+  "dependencies": {
+    "@dronten/components-css": "workspace:*",
+    "@dronten/design-tokens": "workspace:*",
+    "@dronten/font": "workspace:*",
+    "@dronten/assets": "workspace:*",
+    "vue": "3.5.6",
+    "vue-router": "4.4.5"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "1.10.4",
+    "@tsconfig/node20": "20.1.4",
+    "@types/node": "20.14.9",
+    "@vitejs/plugin-vue": "5.1.3",
+    "@vitejs/plugin-vue-jsx": "3.1.0",
+    "@vue/eslint-config-prettier": "8.0.0",
+    "@vue/eslint-config-typescript": "12.0.0",
+    "@vue/tsconfig": "0.5.1",
+    "eslint": "8.57.0",
+    "eslint-plugin-vue": "9.28.0",
+    "npm-run-all2": "6.2.3",
+    "prettier": "3.3.2",
+    "sass-embedded": "1.78.0",
+    "typescript": "5.4.5",
+    "vite": "5.3.3",
+    "vite-plugin-vue-devtools": "7.4.5",
+    "vue-tsc": "2.1.6"
+  }
+}

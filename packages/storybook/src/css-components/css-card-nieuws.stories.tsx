@@ -1,22 +1,22 @@
 /* @license CC0-1.0 */
 
-import readme from '@dronten/components-css/card/README.md?raw';
-import '@dronten/components-css/card/index.scss';
-import type { Meta, StoryObj } from '@storybook/react';
-import { PropsWithChildren } from 'react';
+import readme from '@dronten/components-css/card/README.md?raw'
+import '@dronten/components-css/card/index.scss'
+import type { Meta, StoryObj } from '@storybook/react'
+import { PropsWithChildren } from 'react'
 
 const NieuwsCard = ({
   imageUrl,
   linkUrl,
   title,
   description,
-  dateTime,
+  dateTime
 }: PropsWithChildren<{
-  imageUrl: string;
-  linkUrl: string;
-  title: string;
-  description?: string;
-  dateTime: string;
+  imageUrl: string
+  linkUrl: string
+  title: string
+  description?: string
+  dateTime: string
 }>) => (
   <div className="dronten-nieuws-card">
     <div className="dronten-nieuws-card__image">
@@ -41,7 +41,7 @@ const NieuwsCard = ({
       </a>
     </div>
   </div>
-);
+)
 
 const meta = {
   title: 'CSS Component/Cards/Nieuws Card',
@@ -52,42 +52,42 @@ const meta = {
       name: 'Card image',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     linkUrl: {
       name: 'Card link',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     title: {
       name: 'Card title',
       type: {
         name: 'string',
-        required: false,
+        required: false
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     description: {
       name: 'Card description',
       type: {
         name: 'string',
-        required: false,
+        required: false
       },
-      defaultValue: '',
+      defaultValue: ''
     },
     dateTime: {
       name: 'Card dateTime',
       type: {
         name: 'string',
-        required: true,
+        required: true
       },
-      defaultValue: '',
-    },
+      defaultValue: ''
+    }
   },
   args: {
     title: 'Meerpaaldagen 2024',
@@ -96,22 +96,22 @@ const meta = {
     imageUrl:
       'https://openpub.dronten.nl/wp-content/uploads/2024/08/MF02432-1024x683.jpg 1024w, https://openpub.dronten.nl/wp-content/uploads/2024/08/MF02432-300x200.jpg 300w, https://openpub.dronten.nl/wp-content/uploads/2024/08/MF02432-768x512.jpg 768w, https://openpub.dronten.nl/wp-content/uploads/2024/08/MF02432-1536x1024.jpg 1536w, https://openpub.dronten.nl/wp-content/uploads/2024/08/MF02432-2048x1365.jpg 2048w',
     linkUrl: 'https://www.dronten.nl/actueel/meerpaaldagen-2024/',
-    dateTime: '5 augustus 2024',
+    dateTime: '5 augustus 2024'
   },
   tags: ['autodocs'],
   parameters: {
     docs: {
       description: {
-        component: readme,
-      },
-    },
-  },
-} satisfies Meta<typeof NieuwsCard>;
+        component: readme
+      }
+    }
+  }
+} satisfies Meta<typeof NieuwsCard>
 
-export default meta;
+export default meta
 
-type Story = StoryObj<typeof meta>;
+type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
-  name: 'Dronten card',
-};
+  name: 'Dronten card'
+}

@@ -1,4 +1,4 @@
-import type { StorybookConfig } from '@storybook/react-vite';
+import type { StorybookConfig } from '@storybook/react-vite'
 
 const config: StorybookConfig = {
   stories: ['../src/**/*stories.@(js|jsx|ts|tsx)', '../src/**/*.mdx'],
@@ -7,20 +7,20 @@ const config: StorybookConfig = {
     '@storybook/addon-docs',
     '@storybook/addon-viewport',
     '@whitespace/storybook-addon-html',
-    '@etchteam/storybook-addon-status',
+    '@etchteam/storybook-addon-status'
   ],
   framework: {
     name: '@storybook/react-vite',
-    options: {},
+    options: {}
   },
   core: {
     disableTelemetry: true,
-    disableWhatsNewNotifications: true,
+    disableWhatsNewNotifications: true
   },
   docs: {
-    autodocs: 'tag',
+    autodocs: 'tag'
   },
-  staticDirs: ['../../../proprietary/assets/src'],
-};
+  staticDirs: ['../../../proprietary/assets/src']
+}
 
-export default config;
+export default config

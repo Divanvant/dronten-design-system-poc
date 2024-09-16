@@ -75,7 +75,12 @@
         "./.eslintrc.js.json",
         "./.eslintrc.react.json"
       ],
-      "files": ["*.ts", "*.tsx"],
+      "files": [
+        "packages/storybook/**/*.ts",
+        "packages/storybook/**/*.tsx",
+        "packages/components-react/**/*.ts",
+        "packages/components-react/**/*.tsx"
+      ],
       "parser": "@typescript-eslint/parser",
       "parserOptions": {
         "project": [
@@ -85,6 +90,24 @@
         ]
       },
       "plugins": ["@typescript-eslint"]
+    },
+    {
+      "extends": ["plugin:@next/next/recommended"],
+      "settings": {
+        "next": {
+          "rootDir": "apps/poc-react/"
+        }
+      },
+      "files": ["apps/poc-react/**/*.ts", "apps/poc-react/**/*.tsx"]
+    },
+    {
+      "extends": [
+        "plugin:vue/vue3-essential",
+        "eslint:recommended",
+        "@vue/eslint-config-typescript",
+        "@vue/eslint-config-prettier/skip-formatting"
+      ],
+      "files": ["apps/poc-vue/**/*.vue"]
     }
   ]
 }
