@@ -1,0 +1,44 @@
+/**
+ * @license EUPL-1.2
+ * Copyright (c) 2021 Community for NL Design System
+ */
+
+.dronten-banner {
+  align-items: center;
+  background-color: var(--dronten-banner-info-background-color);
+  /* stylelint-disable-next-line property-disallowed-list */
+  border-left: 0.25rem solid var(--dronten-banner-info-color);
+  color: var(--dronten-banner-info-color);
+  display: flex;
+  margin-block: 1.25rem;
+  padding-block: 1.25rem;
+  padding-inline: 1.25rem;
+
+  img {
+    margin-inline-end: 0.75rem;
+    /* stylelint-disable-next-line property-disallowed-list */
+    max-width: 2.5rem;
+  }
+
+  strong {
+    margin-inline-end: 0.25rem;
+  }
+
+  &__success {
+    background-color: var(--dronten-banner-success-background-color);
+    border-color: var(--dronten-banner-success-color);
+    color: var(--dronten-banner-success-color);
+  }
+
+  &__warning {
+    background-color: var(--dronten-banner-warning-background-color);
+    border-color: var(--dronten-banner-warning-color);
+    color: var(--dronten-banner-warning-color);
+  }
+
+  &__error {
+    background-color: var(--dronten-banner-error-background-color);
+    border-color: var(--dronten-banner-error-color);
+    color: var(--dronten-banner-error-color);
+  }
+}

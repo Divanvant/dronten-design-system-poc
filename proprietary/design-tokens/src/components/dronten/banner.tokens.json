@@ -1,0 +1,38 @@
+{
+  "dronten": {
+    "banner": {
+      "info": {
+        "background-color": {
+          "value": "{dronten.color.info.opaque}"
+        },
+        "color": {
+          "value": "{dronten.color.info.40}"
+        }
+      },
+      "success": {
+        "background-color": {
+          "value": "{dronten.color.success.opaque}"
+        },
+        "color": {
+          "value": "{dronten.color.success.40}"
+        }
+      },
+      "error": {
+        "background-color": {
+          "value": "{dronten.color.error.opaque}"
+        },
+        "color": {
+          "value": "{dronten.color.error.40}"
+        }
+      },
+      "warning": {
+        "background-color": {
+          "value": "{dronten.color.warning.opaque}"
+        },
+        "color": {
+          "value": "{dronten.color.warning.40}"
+        }
+      }
+    }
+  }
+}
