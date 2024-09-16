@@ -62,10 +62,6 @@ const meta = {
       defaultValue: 'info'
     }
   },
-  args: {
-    title: 'Informatie',
-    description: 'Deze banner kan meer informatie bieden'
-  },
   tags: ['autodocs'],
   parameters: {
     docs: {
@@ -80,7 +76,13 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {
+    title: 'Informatie',
+    description: 'Deze banner kan meer informatie bieden',
+    bannerType: BannerType.info
+  }
+}
 
 export const Warning: Story = {
   args: {

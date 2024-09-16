@@ -1,9 +1,11 @@
+import '@dronten/assets/src/reset.css'
+import { Banner as DrontenBanner } from '@dronten/components-react/src'
+import { BannerType } from '@dronten/components-react/src/Banner'
+import '@dronten/design-tokens/dist/index.css'
+import '@dronten/font/src/index.scss'
 import type { Metadata } from 'next'
 import Script from 'next/script'
 import * as React from 'react'
-import '@dronten/assets/src/reset.css'
-import '@dronten/design-tokens/dist/index.css'
-import '@dronten/font/src/index.scss'
 import Footer from '../components/Footer'
 import Navbar from '../components/NavBar'
 
@@ -23,7 +25,14 @@ export default function RootLayout({
       <html lang="en">
         <body className="dronten-theme">
           <Navbar />
-
+          <div className="container">
+            <DrontenBanner
+              title="Developer nota:"
+              description="Deze website is met Next.js gebouwd"
+              imageUrl="/favicon.ico"
+              bannerType={BannerType.info}
+            />
+          </div>
           {children}
           <Footer />
         </body>

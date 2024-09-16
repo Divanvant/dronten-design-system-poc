@@ -2,7 +2,6 @@
 import { onMounted, ref } from 'vue'
 
 import NieuwsCard from '../components/design-system-components/NieuwsCard.vue'
-import DevNoteCallout from '../components/DevNoteCallout.vue'
 import { useNieuwsItems } from '../composables/useNieuwsItems'
 import { usePrettyDate } from '../composables/usePrettyDate'
 
@@ -28,8 +27,6 @@ onMounted(() => {
 <template>
   <div class="container">
     <h1>Nieuws</h1>
-
-    <DevNoteCallout title="Developer nota:" description="Deze informatie wordt vanuit de OpenPUB bron opgeroepen" />
 
     <div v-if="nieuwsData && nieuwsData.length">
       <NieuwsCard

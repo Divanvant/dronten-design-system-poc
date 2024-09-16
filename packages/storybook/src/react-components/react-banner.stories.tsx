@@ -39,10 +39,6 @@ const meta = {
       options: ['info', 'warning', 'error', 'success'],
       defaultValue: 'info'
     }
-  },
-  args: {
-    title: 'Informatie',
-    description: 'Deze banner kan meer informatie bieden'
   }
 } satisfies Meta<typeof Banner>
 
@@ -50,7 +46,13 @@ export default meta
 
 type Story = StoryObj<typeof meta>
 
-export const Default: Story = {}
+export const Default: Story = {
+  args: {
+    title: 'Informatie',
+    description: 'Deze banner kan meer informatie bieden',
+    bannerType: BannerType.info
+  }
+}
 
 export const Warning: Story = {
   args: {
