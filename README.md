@@ -2,6 +2,8 @@
 
 # Dronten Headless architectuur met design systeem POC
 
+## !NB this codebase is a Proof of concept
+
 ## Delen
 
 - [Design systeem](#dronten-design-systeem-documentatie)
@@ -27,6 +29,7 @@ De data wordt met React hooks en Vue composables opgehaald. Dat betekent dat om 
 
 ```bash
 pnpm install
+pnpm build
 pnpm dev
 ```
 
@@ -45,18 +48,11 @@ In de `proprietary/design-tokens/src/brand/dronten` map kan jij de design tokens
 
 ## Dronten Design Systeem documentatie
 
-## !NB this codebase is a Proof of concept
-
 Please note that this repository is currently only used as a proof of concept and therefore it should not be used for any other reason
 
 This design system is based on the NL Design System architecture.
 
 For more info about the NL Design System and learn about things happening in our open source community, join the `#nl-design-system` Slack via [praatmee.codefor.nl](https://praatmee.codefor.nl)!
-
-### Run storybook
-
-- Install dependencies: `pnpm install`
-- Run storybook: `npm run storybook`
 
 ## Code of Conduct
 
